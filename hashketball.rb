@@ -149,9 +149,12 @@ end
 
 def team_colors(team_name)
   game_hash.each do |team, team_info|
-    team_info[:players].each do |player|
-      if player[:team_name] == player_search
-        return team_stats[:colors]
+    team_info.each do |stats, keys|
+      if keys == team_name
+        return team_info[:colors]
+      end
+    end
+  end
 
 end
 
