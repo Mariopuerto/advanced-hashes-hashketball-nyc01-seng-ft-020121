@@ -132,7 +132,7 @@ game_hash.each do |location, team_data|
     if player_name: == names
       return stats[points]
     end
-  end 
+  end
 end
 
   end
