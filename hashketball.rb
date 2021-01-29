@@ -167,7 +167,7 @@ end
 def player_numbers(input)
   output = []
   game_hash.each do |team, team_info|
-    if team_info[:team_name] == input
+    if team_info[:team_name] == input 
       team_info.each do |key, value|
         if key == :players
           value.each do |player|
@@ -186,7 +186,7 @@ def player_stats(input)
       if key == :players
         value.each do |player|
           if input == player[:player_name]
-            player.delete(:player_name) 
+        
             return player
           end
         end
