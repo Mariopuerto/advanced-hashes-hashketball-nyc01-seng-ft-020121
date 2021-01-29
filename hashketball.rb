@@ -139,14 +139,14 @@ def team_names(team)
 end
 
 def player_numbers(team)
-end 
+end
 
 def player_stats(player)
-  
+
 end
 
 def big_shoe_rebounds
-  
+
 end
 
 # Write code here
