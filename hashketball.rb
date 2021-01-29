@@ -165,6 +165,8 @@ def team_names(team)
 end
 
 def player_numbers(team)
+  game_hash.map do |team, team_info|
+   team_info[:player_numbers]
 end
 
 def player_stats(player)
