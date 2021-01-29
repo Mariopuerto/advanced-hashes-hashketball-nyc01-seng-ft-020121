@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code below game_hash
 def game_hash
   {
@@ -126,8 +127,13 @@ def game_hash
   }
 end
 
-def num_points_scored(player_name)
-find_player(player_name)[:points]
+def num_points_scored(player_search)
+game_hash.each do |team, team_info|
+  team_info[:players].each do |player|
+    if player[:player_name] == player_search
+      return player[:points]
+    end
+  end
 end
 
 
