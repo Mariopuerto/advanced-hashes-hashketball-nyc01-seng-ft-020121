@@ -127,6 +127,7 @@ def game_hash
 end
 
 def num_points_scored(player)
+  
 end
 
 def shoe_size(player)
@@ -145,7 +146,7 @@ def player_stats(player)
 
 end
 
-def big_shoe_rebounds
+def big_shoe_rebounds(player)
 
 end
 
