@@ -126,10 +126,10 @@ def game_hash
   }
 end
 
-def num_points_scored(player_name)
+def num_points_scored(player)
 game_hash.each do |location, data|
   data[player_name:].each do |names, stats|
-    if name == names
+    if player == names
       return stats[points:]
     end
   end
